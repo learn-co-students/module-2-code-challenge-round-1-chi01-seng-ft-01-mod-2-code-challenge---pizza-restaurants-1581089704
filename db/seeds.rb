@@ -72,3 +72,5 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+PizzaRestaurant.create(pizza_id: Pizza.first, restaurant_id: Restaurant.first)
