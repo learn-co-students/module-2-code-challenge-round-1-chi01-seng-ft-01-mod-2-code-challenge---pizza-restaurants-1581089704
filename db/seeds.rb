@@ -72,3 +72,50 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+pizza_restaurants = [
+  {
+    pizza_id: 1,
+    restaurant_id: 2
+  },
+  {
+    pizza_id: 2,
+    restaurant_id: 3
+  },
+  {
+    pizza_id: 3,
+    restaurant_id: 1
+  },
+  {
+    pizza_id: 4,
+    restaurant_id: 2
+  },
+  {
+    pizza_id: 5,
+    restaurant_id: 3
+  },
+  {
+    pizza_id: 6,
+    restaurant_id: 1
+  },
+  {
+    pizza_id: 1,
+    restaurant_id: 2
+  },
+  {
+    pizza_id: 2,
+    restaurant_id: 3
+  },
+  {
+    pizza_id: 3,
+    restaurant_id: 1
+  },
+  {
+    pizza_id: 4,
+    restaurant_id: 2
+  },
+]
+
+pizza_restaurants.each do |p|
+  PizzaRestaurant.create!(p)
+end
