@@ -29,7 +29,7 @@ end
 pizzas = [
   {
     name: "Cheese",
-    ingredients: "Dough, Tomato Sauce, Cheese"
+    name: "Cheese",
   },
   {
     name: "Pepperoni",

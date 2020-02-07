@@ -1,0 +1,11 @@
+<%= form_for(@pizza) do |f| %>
+<label>Pizza name:</label>
+<%= f.text_field :name %>
+
+<label>Pizza ingredients:</label>
+<%= f.text_field :ingredients %>
+
+
+<%= f.submit %>
+
+<% end %>

@@ -1,0 +1,9 @@
+<% @restaurants.each do |restaurant| %>
+<%= restaurant.name %>
+<%= restaurant.address %>
+
+
+<%= restaurant.pizza.name %>
+    <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+
+    <% end %>
