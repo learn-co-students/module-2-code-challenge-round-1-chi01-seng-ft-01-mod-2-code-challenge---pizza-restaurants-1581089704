@@ -1,0 +1,20 @@
+<h1>New Pizza</h1>
+
+
+<% if flash[:order_errors]%>
+  <div id="error_explanation">
+    <ul>
+    <% flash[:order_errors].each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_with model: @pizza do |f| %>
+  Name: <%= f.text_field :name %>
+  Ingredients: <%= f.text_field :ingredients %>
+  Restaurant: <%= f.collection_select :restaurant_id, @restaurants, :id, :name %>
+  <%= f.submit %>
+<% end %>
