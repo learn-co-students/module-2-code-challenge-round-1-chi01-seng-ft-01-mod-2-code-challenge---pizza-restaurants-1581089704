@@ -55,26 +55,26 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ### 1. Create the RestaurantPizza Association
 
-Create the join model RestaurantPizza to store the association between Pizzas and Restaurants. Update the schema and models to create the relationship.
+<!-- Create the join model RestaurantPizza to store the association between Pizzas and Restaurants. Update the schema and models to create the relationship. -->
 
-Each Restaurant can have many Pizzas. Each Pizza can belong to multiple Restaurants.
+<!-- Each Restaurant can have many Pizzas. Each Pizza can belong to multiple Restaurants. -->
 
-### 2. Pizza Show Page
+<!-- ### 2. Pizza Show Page
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+There should be a show page for each Pizza. It should display the name and ingredients. -->
 
 ### 3. Restaurant Show Page
 
 There should be a show page for each Restaurant. It should include:
 
-- the Restaurant's name and address
+<!-- - the Restaurant's name and address -->
 - a list of the Pizzas it sells
 
 Each pizza in the list should link to that Pizza's show page.
 
-### 4. Restaurants Index Page Links
+<!-- ### 4. Restaurants Index Page Links
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+On the Restaurant index page, each Restaurant's name should link to the restaurant's show page. -->
 
 ### 5. New Pizza Form
 
@@ -87,20 +87,20 @@ Add controller actions and views necessary to show a form to create a new pizza.
 
 After submitting, the user should be redirected to the new Pizza's show page.
 
-### 6. Pizza Validation
+<!-- ### 6. Pizza Validation
 
 Add validations to the Pizza model so that each pizza must have:
 
 - a name
-- ingredients
+- ingredients -->
 
 Add error handling to the Pizza create action. Show any validation errors on the Pizza creation form if the user attempts to save an invalid Pizza.
 
 ### 7. Advanced: Pizza Validation
 
-Pizzas should not have the same name.
+<!-- Pizzas should not have the same name.
 
-Add a validation to prevent this.
+Add a validation to prevent this. -->
 
 Update the error handling and error display so that this error shows on the Pizza creation form.
 
