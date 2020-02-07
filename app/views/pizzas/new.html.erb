@@ -1,0 +1,21 @@
+<h1> Add A Pizza! </h1>
+
+<%= form_for @pizza do |f| %>
+    <p>Name:<%= f.text_field :name %></p>
+    <p>Ingredients:<%= f.text_field :ingredients %></p>
+    <p>Restaurant:<%= f.text_field :restaurants %></p>
+    <%= f.submit "Save" %>
+<% end %>
+
+<!-- <p>Restaurant:<%= f.collection_select(:restaurant_id, @restaurants, :id, :name) %></p>
+    this was meant to be the dropdown for restaurants -->
+
+<!-- <%= if @pizza.errors.any? %>
+    <% id="error_explanation" %>
+    Some errors:
+    <% @pizza.errors.full_messages.each do |message| %>
+    <l1><%= message %></l1>
+    else 
+
+    this was meant to be the error notification for users if the validations weren't met-->
+
