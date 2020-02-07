@@ -1,0 +1,7 @@
+<h1> A Single Restaurant!!! </h1>
+
+<%= @restaurant.name + " " + @restaurant.address %><br>
+
+<% @restaurant.pizzas.each do |pizza| %>
+<%= link_to pizza.name, pizza_path(pizza) %>
+<% end %>
