@@ -69,6 +69,14 @@ pizzas = [
   }
 ]
 
+#restaurantpizzas
+# RestaurantPizza.create(restaurant_id: Restaurant.find_by(name: "Sottocasa NYC"), pizza_id: Pizza.find_by(name: "Cheese")
+# RestaurantPizza.create(restaurant_id: 1, pizza_id: 1)
+# RestaurantPizza.create(restaurant_id: 1, pizza_id: 1)
+# RestaurantPizza.create(restaurant_id: 1, pizza_id: 1)
+# RestaurantPizza.create(restaurant_id: 1, pizza_id: 1)
+# RestaurantPizza.create(restaurant_id: 1, pizza_id: 1)
+
 pizzas.each do |p|
   Pizza.create!(p)
 end

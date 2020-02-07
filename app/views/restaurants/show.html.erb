@@ -1,0 +1,16 @@
+<h1>Restaurant Show Page</h1>
+
+<h1><%= @restaurant.name %></h1>
+<%= @restaurant.address %> 
+
+<% @restaurant.pizzas.each do |pizza| %>
+<%= pizza.name %>
+<%end%>
+<!-- NONE OF THE RESTAURANTS HAVE ANY PIZZAS
+BECAUSE IT WASN'T GIVEN TO US IN THE SEEDS -->
+<!-- 
+HAVING A HARD TIME CONNECTING THE PIZZAS TO THE RESTAURANTS.
+WOULD BE EASIER TO HAVE A NEW PIZZA FORM, NEW RESTAURANT FORM, NEW PIZZARESTAURANT FORM
+COULD PROBABLY FIGURE IT OUT IF I HAD MORE TIME -->
+
+
